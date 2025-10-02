@@ -8,11 +8,11 @@ spring:
       enabled: true
       path: "/h2"
   profiles:
-    active: "local"
+    active: docker
 aws:
   dynamodb:
     endpoint: "http://localhost:8000"
-  region: "${AWS_REGION}"
+  region: ${AWS_REGION}
 entrypoint:
   sqs:
     region: ${AWS_REGION}
